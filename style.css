@@ -1,0 +1,226 @@
+body{
+	background-color:#E2E2E2;
+	font-size:12px;
+}
+body,div,html,td,tr,table,tbody,thead,a,botton,ul,li,th,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+div.game-container{
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color:#ccc;
+	border:#999 1px solid;
+}
+div.game-container > div.title{
+	position:relative;
+	padding:10px 30px;
+	border-bottom:1px solid #999;
+	text-align:right;
+	color:blueviolet;
+	border-right:20px solid blueviolet;
+}
+div.game-container > div.title>div.list{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+}
+div.game-container > div.title>div.list>button{
+	border:none;
+	background-color:blueviolet;
+	color:#E2E2E2;
+	font-weight:bolder;
+	height:100%;
+	padding:0 20px;
+	cursor:pointer;
+	margin-left:0px;
+	border-left:1px solid rgba(255,255,255,0.3);
+	transition:0.3s background-color ease-in-out;
+}
+div.game-container > div.title>div.list>button:hover{
+	background-color:darkblue;
+}
+div.game-container>div.monitor{
+	height:500px;
+	width:100%;
+	position:relative;
+}
+div.game-container > div.monitor >div.hand{
+	width:50%;
+	height:50%;
+	position:absolute;
+	cursor:pointer;
+	opacity:0.5;
+}
+div.game-container > div.monitor >div.hand:hover{
+	opacity:1;
+}
+div.game-container .top{top:0;}
+div.game-container .right{right:0;}
+div.game-container .left{left:0;}
+div.game-container .bottom{bottom:0;}
+div.game-container > div.monitor >div.hand>div.wrist{
+	position:absolute;
+	right:0;
+	left:0;
+	margin:auto;
+	width:75px;
+	height:25px;
+	background-color:darkcyan;
+}
+div.game-container > div.monitor >div.hand.top>div.wrist{
+	top:0;
+}
+div.game-container > div.monitor >div.hand.bottom>div.wrist{
+	bottom:0;
+}
+div.game-container > div.monitor >div.hand>div.palm{
+	position:absolute;
+	right:0;
+	left:0;
+	margin:auto;
+	width:150px;
+	height:110px;
+	background-color:bisque;
+	border-radius:20px;
+}
+div.game-container > div.monitor >div.hand.top>div.palm{
+	top:25px;
+	border-top:40px solid darkcyan;
+}
+div.game-container > div.monitor >div.hand.bottom>div.palm{
+	bottom:25px;
+	border-bottom:40px solid darkcyan;
+}
+div.game-container > div.monitor >div.hand>div.palm>div.finger{
+	transition:all 4s linear;
+}
+div.game-container > div.monitor >div.hand>div.palm>div.finger:nth-child(1){
+	position:absolute;
+	background-color:#d2b592;
+	width:30px;
+	height:75px;
+	border-radius:10px;
+	z-index:3;
+}
+div.game-container > div.monitor >div.hand.top>div.palm>div.finger:nth-child(1){
+	bottom:-10px;
+}
+div.game-container > div.monitor >div.hand.bottom>div.palm>div.finger:nth-child(1){
+	top:-10px;
+}
+div.game-container > div.monitor >div.hand.left>div.palm>div.finger:nth-child(1){
+	right:10px;
+}
+div.game-container > div.monitor >div.hand.right>div.palm>div.finger:nth-child(1){
+	left:10px;
+}
+div.game-container > div.monitor >div.hand>div.palm>div.finger:nth-child(2){
+	position:absolute;
+	background-color:#d2b592;
+	width:30px;
+	height:95px;
+	border-radius:10px;
+	z-index:3;
+}
+div.game-container > div.monitor >div.hand.top>div.palm>div.finger:nth-child(2){
+	bottom:-14px;
+}
+div.game-container > div.monitor >div.hand.bottom>div.palm>div.finger:nth-child(2){
+	top:-14px;
+}
+div.game-container > div.monitor >div.hand.left>div.palm>div.finger:nth-child(2){
+	right:41px;
+}
+div.game-container > div.monitor >div.hand.right>div.palm>div.finger:nth-child(2){
+	left:41px;
+}
+div.game-container > div.monitor >div.hand>div.palm>div.finger:nth-child(3){
+	position:absolute;
+	background-color:#d2b592;
+	width:30px;
+	height:120px;
+	border-radius:10px;
+	z-index:3;
+}
+div.game-container > div.monitor >div.hand.top>div.palm>div.finger:nth-child(3){
+	bottom:-15px;
+}
+div.game-container > div.monitor >div.hand.bottom>div.palm>div.finger:nth-child(3){
+	top:-15px;
+}
+div.game-container > div.monitor >div.hand.left>div.palm>div.finger:nth-child(3){
+	right:72px;
+}
+div.game-container > div.monitor >div.hand.right>div.palm>div.finger:nth-child(3){
+	left:72px;
+}
+div.game-container > div.monitor >div.hand>div.palm>div.finger:nth-child(4){
+	position:absolute;
+	background-color:#d2b592;
+	width:30px;
+	height:95px;
+	border-radius:10px;
+	z-index:3;
+}
+div.game-container > div.monitor >div.hand.top>div.palm>div.finger:nth-child(4){
+	bottom:-13px;
+}
+div.game-container > div.monitor >div.hand.bottom>div.palm>div.finger:nth-child(4){
+	top:-13px;
+}
+div.game-container > div.monitor >div.hand.left>div.palm>div.finger:nth-child(4){
+	right:103px;
+}
+div.game-container > div.monitor >div.hand.right>div.palm>div.finger:nth-child(4){
+	left:103px;
+}
+div.game-container > div.monitor >div.hand>div.palm>div.finger:nth-child(5){
+	position:absolute;
+	background-color:#e3c4a0;
+	width:85px;
+	height:30px;
+	border-radius:10px;
+	z-index:2;
+}
+div.game-container > div.monitor >div.hand.top>div.palm>div.finger:nth-child(5){
+	bottom:50px;
+}
+div.game-container > div.monitor >div.hand.bottom>div.palm>div.finger:nth-child(5){
+	top:50px;
+}
+div.game-container > div.monitor >div.hand.left>div.palm>div.finger:nth-child(5){
+	left:-10px;
+}
+div.game-container > div.monitor >div.hand.right>div.palm>div.finger:nth-child(5){
+	right:-10px;
+}
+div.game-container > div.monitor >div.score{
+	position:absolute;
+	background-color:rgba(0,0,0,0.7);
+	color:#fff;
+	text-align:center;
+	padding:20px;
+	left:-115px;
+	width:75px;
+	margin:120px 0;
+}
+div.game-container div.goal{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:darkred;
+	border:1px solid #333;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index:1;
+	display:none;
+}

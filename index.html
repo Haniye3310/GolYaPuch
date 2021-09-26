@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>session5</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf8;">
+	    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="game-container">
+			<div class="title">
+				<h2>گل یا پوچ</h2>
+				<div class="list">
+					<button onclick="javascript:golyapuch.input('start');this.style='display:none'; return 0;">start</button><button onclick="javascript:golyapuch.input('restart'); return 0;">restart</button>
+				</div>
+			</div>
+			<div class="monitor">
+				<div class="hand top left" id="pcLeftHand" onclick="javascript:golyapuch.input('pcLeftHand'); return 0;">
+					<div class="wrist"></div>
+					<div class="palm">
+						<div class="finger" id="pcLeftHandF1"></div>
+						<div class="finger" id="pcLeftHandF2"></div>
+						<div class="finger" id="pcLeftHandF3"></div>
+						<div class="finger" id="pcLeftHandF4"></div>
+						<div class="finger" id="pcLeftHandF5"></div>
+						<div class="goal" id="pcLeftHandGoal"></div>
+					</div>
+				</div>
+				<div class="hand top right" id="pcRightHand" onclick="javascript:golyapuch.input('pcRightHand'); return 0;">
+					<div class="wrist"></div>
+					<div class="palm">
+						<div class="finger" id="pcRightHandF1"></div>
+						<div class="finger" id="pcRightHandF2"></div>
+						<div class="finger" id="pcRightHandF3"></div>
+						<div class="finger" id="pcRightHandF4"></div>
+						<div class="finger" id="pcRightHandF5"></div>
+						<div class="goal" id="pcRightHandGoal"></div>
+					</div>
+				</div>
+				<div class="hand bottom left" id="userLeftHand" onclick="javascript:golyapuch.input('userLeftHand'); return 0;">
+					<div class="wrist"></div>
+					<div class="palm">
+						<div class="finger" id="userLeftHandF1"></div>
+						<div class="finger" id="userLeftHandF2"></div>
+						<div class="finger" id="userLeftHandF3"></div>
+						<div class="finger" id="userLeftHandF4"></div>
+						<div class="finger" id="userLeftHandF5"></div>
+						<div class="goal" id="userLeftHandGoal"></div>
+					</div>
+				</div>
+				<div class="hand bottom right" id="userRightHand" onclick="javascript:golyapuch.input('userRightHand'); return 0;">
+					<div class="wrist"></div>
+					<div class="palm">
+						<div class="finger" id="userRightHandF1"></div>
+						<div class="finger" id="userRightHandF2"></div>
+						<div class="finger" id="userRightHandF3"></div>
+						<div class="finger" id="userRightHandF4"></div>
+						<div class="finger" id="userRightHandF5"></div>
+						<div class="goal" id="userRightHandGoal"></div>
+					</div>
+				</div>
+				<div class="score top">
+					<b>PC</b>
+					<p>score: <span id="pcScore">0</span></p>
+					<p id="pcAlerts"></p>
+				</div>
+				<div class="score bottom">
+					<b>YOU</b>
+					<p>score: <span id="userScore">0</span></p>
+					<p id="userAlerts"></p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./code.js"></script>
+	</body>
+</html>
